@@ -1,7 +1,6 @@
 const db = require("../config/db");
 const bcrypt = require("bcrypt");
 
-/* ================= REGISTER ================= */
 exports.register = async (req, res) => {
     try {
         const {
@@ -54,7 +53,6 @@ exports.register = async (req, res) => {
     }
 };
 
-/* ================= LOGIN ================= */
 exports.login = (req, res) => {
     const { email, password } = req.body;
 
